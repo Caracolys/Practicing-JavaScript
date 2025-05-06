@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form action="" onsubmit="funcao()">
+                    <div>
+                        <label for="nome_curso">Nome do curso:</label>
+                        <input type="text" name="nome_curso" id="nome_curso">
+                    </div>
+                    <div>
+                        <label for="nome_instituicao">Instituição:</label>
+                        <input type="text" name="nome_instituicao" id="nome_instituicao">
+                    </div>
+                    <div>
+                        <label for="data_inicial">Início:</label>
+                        <input type="text" name="data_inicial" id="data_inicial">
+                    </div>
+                    <div>
+                        <label for="data_final">Fim:</label>
+                        <input type="text" name="data_final" id="data_final">
+                    </div>
+                    <div>
+                        <label for="nota">Nota:</label>
+                        <input type="numeric" name="nota" id="nota">
+                    </div>    
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="limpar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Instituição</th>
+                        <th>Inicio</th>
+                        <th>Fim</th>
+                        <th>Nota</th>
+                        <th>Ações UD</th>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+        var usuario = 'Carol'
+        alert("Esta é minha primeira interação com a " + usuario);
+</script>
+</html>
