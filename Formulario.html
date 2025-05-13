@@ -1,56 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-    <link rel="stylesheet" href="Formulario.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <table>
-        <tr>
-            <td>
-                <form action="submit" type="post" onsubmit="funcao()">
-                    <div>
-                        <label for="nome_curso">Nome do curso:</label>
-                        <input type="text" name="nome_curso" id="nome_curso">
-                    </div>
-                    <div>
-                        <label for="nome_instituicao">Instituição:</label>
-                        <input type="text" name="nome_instituicao" id="nome_instituicao">
-                    </div>
-                    <div>
-                        <label for="data_inicial">Início:</label>
-                        <input type="text" name="data_inicial" id="data_inicial">
-                    </div>
-                    <div>
-                        <label for="data_final">Fim:</label>
-                        <input type="text" name="data_final" id="data_final">
-                    </div>
-                    <div>
-                        <label for="nota">Nota:</label>
-                        <input type="numeric" name="nota" id="nota">
-                    </div>    
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="limpar">
-                    </div>
-                </form>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <th>Curso</th>
-                        <th>Instituição</th>
-                        <th>Inicio</th>
-                        <th>Fim</th>
-                        <th>Nota</th>
-                        <th>Ações UD</th>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+  <div class="box_form">
+    <div class="form">
+      <form action="submit" method="post" onsubmit="funcao()">
+        <div>
+          <label for="nome_curso">Nome do curso:</label>
+          <div class="input">
+            <input type="text" name="nome_curso" id="nome_curso">
+          </div>
+        </div>
+        <div>
+          <label for="nome_instituicao">Instituição:</label>
+          <div class="input">
+          <input type="text" name="nome_instituicao" id="nome_instituicao">
+        </div>
+        </div>
+        <div>
+          <label for="data_inicial">Início:</label>
+          <div class="input">
+          <input type="text" name="data_inicial" id="data_inicial">
+          </div>
+        </div>
+        <div>
+          <label for="data_final">Fim:</label>
+          <div class="input">
+          <input type="text" name="data_final" id="data_final">
+          </div>
+        </div>
+        <div>
+          <label for="nota">Nota:</label>
+          <div class="input">
+          <input type="number" name="nota" id="nota">
+          </div>
+        </div>    
+        <div class="botoes">
+          <div class="enviar">
+            <input type="submit" value="Enviar">
+          </div>
+          <div class="limpar">
+          <input type="reset" value="Limpar">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Curso</th>
+            <th>Instituição</th>
+            <th>Início</th>
+            <th>Fim</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- dados js aqui -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./scripts.js"></script>
 </body>
-<script type="text/javascript" src="./scripts.js"> </script>
 </html>
