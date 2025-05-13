@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="box_form">
+    <div class="form">
+      <form action="submit" method="post" onsubmit= "contato.Enviar()">
+        <div>
+          <label for="nome">Nome:</label>
+          <div class="input">
+            <input type="text" name="nome" id="nome">
+          </div>
+        </div>
+        <div>
+          <label for="email">E-Mail:</label>
+          <div class="input">
+          <input type="text" name="email" id="email">
+        </div>
+        </div>
+        <div>
+          <label for="fone">Fone:</label>
+          <div class="input">
+          <input type="text" name="fone" id="fone">
+          </div>
+        </div>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <div class="input">
+          <input type="text" name="mensagem" id="mensagem">
+          </div>
+        </div>
+        <div>
+          <label for="idade">Idade:</label>
+          <div class="input">
+          <input type="number" name="idade" id="idade">
+          </div>
+        </div>  
+        <div>
+             <label for="data_cadastro">Data:</label>
+            <div class="input">
+            <input type="text" name="data" id="data">
+            </div>
+        </div>  
+        <div class="botoes">
+          <div class="enviar">
+            <input type="submit" value="Enviar">
+          </div>
+          <div class="limpar">
+          <input type="reset" value="Limpar">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-Mail</th>
+            <th>Fone</th>
+            <th>Mensagem</th>
+            <th>Idade</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- dados js aqui -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./scripts.js"></script>
+</body>
+</html>
