@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, #050d2e, #0b1a45);
+    color: #e0e0e0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .box_form {
+    display: flex;
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+  }
+  
+  form {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input input {
+    background-color: #0077b6;
+    padding: 15px;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 14px;
+    width: 300px;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .botoes {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+  }
+  
+  .enviar input {
+    background-color: #00ff88;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+ .limpar input {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  table {
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    min-width: 800px;
+    background-color: rgba(255, 255);
+  }
+
+  .box_table {
+    display: flex;
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+  }
