@@ -7,14 +7,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<!--MDN documentação W3School
+
+pattern="\d{2}\\(d{2}\)\d{5}-\d{4}"
+
+-->
+
 <body>
   <div class="box_form">
     <div class="form">
-      <form action="submit" method="post" onsubmit= "contato.Enviar()">
+      <form action="" method="post" onsubmit="contato.Enviar(event)">;
         <div>
           <label for="nome">Nome:</label>
           <div class="input">
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" required minlength="1">
           </div>
         </div>
         <div>
@@ -26,13 +32,29 @@
         <div>
           <label for="fone">Fone:</label>
           <div class="input">
-          <input type="text" name="fone" id="fone">
+          <input type="tel" name="fone" id="fone" placeholder="00(00)00000-0000">
+          </div>
+        </div>
+        <div>
+          <label for="tipo_contato">Forma de contato:</label>
+          <div class="input">
+
+            <div class="radio">
+
+            <input type="radio" id="email" name="tipo_contato" value="E-Mail">
+            <label for="E-Mail">E-Mail</label><br>
+            <input type="radio" id="css" name="tipo_contato" value="Zap">
+            <label for="Zap">Zap</label><br>
+            <input type="radio" id="javascript" name="tipo_contato" value="Ligacao">
+            <label for="Ligacao">Ligacao</label>
+
+            </div>
           </div>
         </div>
         <div>
           <label for="mensagem">Mensagem:</label>
           <div class="input">
-          <input type="text" name="mensagem" id="mensagem">
+          <textarea type="text" name="forma" id="forma" rows="4" cols="50"> </textarea>
           </div>
         </div>
         <div>
@@ -44,7 +66,7 @@
         <div>
              <label for="data_cadastro">Data:</label>
             <div class="input">
-            <input type="text" name="data" id="data">
+            <input type="date" name="data" id="data">
             </div>
         </div>  
         <div class="botoes">
@@ -65,18 +87,18 @@
             <th>Nome</th>
             <th>E-Mail</th>
             <th>Fone</th>
+            <th>Forma de contato</th>
             <th>Mensagem</th>
             <th>Idade</th>
             <th>Data</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- dados js aqui -->
+        <tbody id="grid_dados">  
         </tbody>
       </table>
     </div>
   </div>
 
-  <script type="text/javascript" src="./scripts.js"></script>
+  <script type="text/javascript" src="./script.js"> </script>
 </body>
 </html>
